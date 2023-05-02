@@ -25,6 +25,21 @@
     "wchar": {
       "description": "Build with wchar_t (Windows only)",
       "supports": "windows"
+    },
+    "prevent-child-fd": {
+      "description": "Prevent from child processes to inherit log file descriptors"
+    },
+    "no-thread-id": {
+      "description": "Prevent from querying the thread id on each log call if thread id is not needed"
+    },
+    "no-tls": {
+      "description": "Prevent from using thread local storage"
+    },
+    "no-atomic-levels": {
+      "description": "Prevent from using of std::atomic log levels"
+    },
+    "no-default-logger": {
+      "description": "Disable default logger creation"
     }
   }
 }

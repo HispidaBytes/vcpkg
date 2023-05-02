@@ -10,8 +10,13 @@ vcpkg_from_github(
 
 vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS
     FEATURES
-        benchmark SPDLOG_BUILD_BENCH
-        wchar     SPDLOG_WCHAR_SUPPORT
+        benchmark           SPDLOG_BUILD_BENCH
+        wchar               SPDLOG_WCHAR_SUPPORT
+        prevent-child-fd    SPDLOG_PREVENT_CHILD_FD
+        no-thread-id        SPDLOG_NO_THREAD_ID
+        no-tls              SPDLOG_NO_TLS
+        no-atomic-levels    SPDLOG_NO_ATOMIC_LEVELS
+        no-default-logger   SPDLOG_DISABLE_DEFAULT_LOGGER 
 )
 
 # SPDLOG_WCHAR_FILENAMES can only be configured in triplet file since it is an alternative (not additive)
